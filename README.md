@@ -45,3 +45,4 @@ design.
 
 
 ![alt text](https://raw.githubusercontent.com/mksolemn/fscc-test/main/src/assets/Screenshot.png "FSCC")
+![alt text](https://raw.githubusercontent.com/mksolemn/fscc-test/main/src/assets/Screenshot-m.png "FSCCm")
