@@ -3,7 +3,13 @@
 ## Run development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
+<br/>
+<br/>
+OR
+<br/>
+1. Run `ng build`;
+2. Navigate to /dist/fscc4/browser
+3. Open terminal in folder and run `http-server` (https://www.npmjs.com/package/http-server)
 # Task requirement
 
 # Developer Task: Create Reusable Angular Components
