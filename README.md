@@ -42,3 +42,6 @@ design.
 - [x] Source code for all components, pushed to a Git repository.
 - [x] A README file with setup instructions;
 - [x] Do not spend more than 3 hours for the task.
+
+
+![alt text](https://raw.githubusercontent.com/mksolemn/fscc-test/main/src/assets/Screenshot.png "FSCC")
