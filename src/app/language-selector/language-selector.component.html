@@ -1,0 +1,16 @@
+<div class="language-selector">
+  <button class="language-selector-btn" [ngClass]="{'open':isOpen}" (click)="this.isOpen = !this.isOpen">
+    <img [src]="'/assets/'+selectedLanguage.icon" [alt]="selectedLanguage.label">
+    <span class="code" [innerHTML]="selectedLanguage.languageCode"></span>
+    <span class="caret" [ngClass]="{'open':isOpen}"></span>
+  </button>
+
+  <ul class="language-options" [ngClass]="{'open':isOpen}" *ngIf="isOpen">
+    <li class="option"
+        *ngFor="let lang of languages; let i = index"
+        (click)="onLanguageSelect(i)">
+      <img [src]="'/assets/'+lang.icon" [alt]="lang.label">
+      <span [innerHTML]="lang.label"></span>
+    </li>
+  </ul>
+</div>

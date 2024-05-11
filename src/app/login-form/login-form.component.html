@@ -1,0 +1,27 @@
+<form class="form-content" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline" hideRequiredMarker="true">
+    <mat-label>El. paštas</mat-label>
+    <input matInput
+           type="email"
+           formControlName="email">
+    <mat-error *ngIf="loginForm.get(['email'])?.invalid && loginForm.get('email')?.touched">
+      <div class="input-error">{{emailErrorMessage()}}</div>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" hideRequiredMarker="true">
+    <mat-label>Slaptažodis</mat-label>
+    <input
+      matInput
+      [type]="showPassword ? 'password' : 'text'"
+      formControlName="password">
+    <button mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+      <mat-icon fontSet="material-icons-outlined">{{ showPassword ?  'visibility' : 'visibility_off' }}</mat-icon>
+    </button>
+    <mat-error *ngIf="loginForm.get(['password'])?.invalid && loginForm.get(['password'])?.touched">
+      <div class="input-error">{{passwordErrorMessage()}}</div>
+    </mat-error>
+  </mat-form-field>
+  <app-button [disabled]="loginForm.invalid">
+    Prisijungti
+  </app-button>
+</form>

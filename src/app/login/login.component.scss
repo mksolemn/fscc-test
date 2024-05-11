@@ -1,0 +1,85 @@
+.form-container {
+  height: 100vh;
+  min-height: 812px;
+  overflow: hidden;
+  letter-spacing: normal;
+  position:relative;
+
+  .bg {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 223.2vw;
+    height: 223.2vw;
+    left: 50%;
+    top: 240px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+}
+
+.form-header {
+  height: 340px;
+  width: 100%;
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &:before {
+    background-image: url("/assets/Vector-left.svg");
+    width: 327px;
+    height: 327px;
+    top: 35px;
+    left: -130px;
+  }
+
+  &:after {
+    background-image: url("/assets/Vector-right.svg");
+    width: 222px;
+    height: 222px;
+    top: 145px;
+    right: -135px;
+  }
+}
+
+.form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+
+
+.form-logo {
+  z-index: 1;
+  position: relative;
+  display: flex;
+
+  > * {
+    margin: auto auto 70px auto;
+  }
+}
+
+.fscc-logo {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  margin: auto;
+
+  img {
+    margin-top: 105px;
+  }
+}
+
+.form-header-widget {
+  position: absolute;
+  right: 24px;
+  top: 75px;
+}

@@ -1,0 +1,10 @@
+<button mat-raised-button
+        matSuffix
+        [class]="'submit-btn '+size"
+        [color]="color"
+        type="submit"
+        [disabled]="disabled"
+        [ngClass]="{'disabled': disabled}">
+  <span><ng-content></ng-content></span>
+  <mat-icon *ngIf="icon" iconPositionEnd>arrow_forward</mat-icon>
+</button>

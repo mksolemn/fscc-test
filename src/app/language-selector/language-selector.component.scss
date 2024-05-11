@@ -1,0 +1,77 @@
+.language-selector {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.language-selector-btn {
+  position: relative;
+  border: solid 1px rgba(255, 255, 255, .54);
+  border-radius: 18px;
+  padding: 4px 14px;
+  color: white;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out .24s;
+
+  .code {
+    margin-left: 5px;
+  }
+
+  .caret {
+    margin-left: 2px;
+  }
+
+  &.open {
+    outline: solid 1px rgba(255, 255, 255, .54);
+  }
+}
+
+.caret {
+  background-image: url("/assets/caret-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  width: 16px;
+  height: 16px;
+
+  &.open {
+    transform: rotate(180deg);
+  }
+}
+
+.language-options {
+  position: absolute;
+  right: 0;
+  padding: 12px;
+  border: solid 2px #E1E5EC;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 0;
+
+  &.open {
+    height: auto;
+  }
+
+  .option {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    padding: 10px 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #E5E9F2;
+      border-radius: 4px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}

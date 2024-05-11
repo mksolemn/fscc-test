@@ -1,27 +1,38 @@
-# Fscc4
+# Fscc test task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
-
-## Development server
+## Run development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Task requirement
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Developer Task: Create Reusable Angular Components
 
-## Build
+## Objective:
+Develop two selected reusable Angular components based on the provided Figma
+design.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Components to be Developed (select two):
+- [x] Language Switch - A dropdown component that allows the user to switch the application&#39;s language.
+- [x] TextInput - A text input component that supports validation and custom styling.
+- [x] Button - A button component that can be customized in terms of color, size, and with or without an icon.
 
-## Running unit tests
+## Requirements:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Language Switch:
+- [x]    Must reflect the current language selection and be able to update it dynamically.
+- [x]    i18n implementation is unnecessary.
 
-## Running end-to-end tests
+### TextInput:
+- [x]    Should include properties for custom placeholder, state.
+- [x]    Implement form control integration using ReactiveFormsModule.
+- [x]    Validation for common inputs like email and password is unnecessary.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Button:
+- [x]    Properties to include: type (submit, button), disabled state, and optional icon.
+- [x]    Customize appearance through input properties like color (primary, accent, warn) and size (small, medium, large).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Deliverables:
+- [x] Source code for all components, pushed to a Git repository.
+- [x] A README file with setup instructions;
+- [x] Do not spend more than 3 hours for the task.
