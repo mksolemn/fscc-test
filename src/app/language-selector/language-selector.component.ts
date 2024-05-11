@@ -37,7 +37,7 @@ export class LanguageSelectorComponent {
       languageCode: 'EN'
     },
   ];
-  @Output('selectedLanguage') selectedLanguage: Language = this.languages[0];
+  selectedLanguage: Language = this.languages[0];
   isOpen: boolean = false;
 
   constructor() {
